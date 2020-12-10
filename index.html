@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braille Translator</title>
+
+    <style>
+        textarea{
+            width: 80%;
+            resize: none;
+            height: 15vh;
+            padding: 1rem;
+            margin: 2rem;
+        }
+
+        #centering {
+            text-align: center;
+        }
+
+        #output{
+            border: 1px solid black;
+            width: 80%;
+            height: 15vh;
+            margin: 2rem;
+            padding: 1rem;
+        }
+
+        button {
+            background-color: #1d9aaa;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="centering">Braille Translator</h1>
+    
+    <textarea id="textInput" placeholder="Enter text which is to be converted in Braille"></textarea>
+    
+    <button id="btnTranslate">translate</button>
+
+    <div id="output"></div>
+
+    <script src="/app.js" type="text/javascript"></script>
+</body>
+</html>
