@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Braille Translator</title>
-
+    <link rel="shortcut icon" type="image/svg" href="images/walking-stick.svg" />
     <style>
+        body {
+            background-image: url('/images/braille.jpg');
+            background-size: cover;
+        }
         textarea{
-            width: 80%;
+            width: 50%;
             resize: none;
             height: 15vh;
             padding: 1rem;
             margin: 2rem;
+            display: block;
         }
 
         #centering {
-            text-align: center;
+            margin-left: 20%;
         }
 
         #output{
             border: 1px solid black;
-            width: 80%;
+            width: 50%;
             height: 15vh;
             margin: 2rem;
+            background-color: white;
             padding: 1rem;
         }
 
         button {
-            background-color: #1d9aaa;
+            background-color: #01444d;
             /* Green */
             border: none;
             color: white;
@@ -37,13 +43,13 @@
             display: inline-block;
             font-size: 16px;
             margin: 2rem;
+            margin-left: 25%;
         }
         .footer {
-            position: fixed;
+            position: relative;
             left: 0;
             bottom: 0;
-            width: 100%;
-            color: rgb(1, 63, 78);
+            color: rgb(1, 35, 44);
             text-align: center;
         }
     </style>
@@ -53,7 +59,7 @@
     
     <textarea id="textInput" placeholder="Enter text which is to be converted in Braille"></textarea>
     
-    <button id="btnTranslate">translate</button>
+    <button id="btnTranslate">Translate</button>
 
     <div id="output"></div>
 
